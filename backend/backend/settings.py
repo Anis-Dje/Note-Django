@@ -150,6 +150,9 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
-
+CORS_ALLOWED_ORIGINS = [
+    "https://note-django-fpfeuyxjr-anisleprince2005-gmailcoms-projects.vercel.app",
+    "http://localhost:5173",  # for local development
+]
 CORS_ALLOW_ALL_ORIGINS = True
-CORS_ALLOWS_CREDENTIALS = True
+CORS_ALLOW_CREDENTIALS = True
