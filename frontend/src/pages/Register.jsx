@@ -1,10 +1,18 @@
-import Form from "../components/Form"
+// ...existing code...
+import Form from "../components/Form";
 
 function Register() {
-    return <><Form route="/api/user/register/" method="register" /><Link to="/login">
-        <h5>Already have an account?</h5>
-        <button>Login</button>
-    </Link></>
+  return (
+    <>
+      <Form
+        route="/api/user/register/"
+        method="register"
+        registerLink="/login"
+        registerText="Already have an account? Login"
+      />
+    </>
+  );
 }
 
-export default Register
+export default Register;
+// ...existing code...

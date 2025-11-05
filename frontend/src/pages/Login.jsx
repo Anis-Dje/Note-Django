@@ -1,10 +1,14 @@
-import Form from "../components/Form"
+// ...existing code...
+import { Link } from "react-router-dom";
+import Form from "../components/Form";
 
 function Login() {
-    return (<><Form route="/api/token/" method="login" /><Link to="/register">
-        <button>Register a new user</button>
-    </Link></>   
-    ) 
+  return (
+    <>
+      <Form route="/api/token/" method="login" registerLink="/register" registerText="Register a new user" />
+    </>
+  );
 }
 
-export default Login
+export default Login;
+// ...existing code...

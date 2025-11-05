@@ -21,3 +21,22 @@
     transform: rotate(360deg);
   }
 }
+/* ...existing code... */
+.loading-indicator {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  border-style: solid;
+  /* default muted border color; top border is overridden by inline style */
+  border-color: rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  animation: loading-spin 0.9s linear infinite;
+}
+
+/* keep the spinner small and centered inside buttons */
+@keyframes loading-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* ...existing code... */
