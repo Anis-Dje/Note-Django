@@ -8,10 +8,12 @@
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   max-width: 400px;
+  width: 90%;
+  box-sizing: border-box;
 }
 
 .form-input {
-  width: 90%;
+  width: 100%;
   padding: 10px;
   margin: 10px 0;
   border: 1px solid #ccc;
@@ -20,7 +22,7 @@
 }
 
 .form-button {
-  width: 95%;
+  width: 100%;
   padding: 10px;
   margin: 20px 0;
   background-color: #007bff;
@@ -39,8 +41,7 @@
 /* register link styled like the blue button (not a <button>) */
 .form-register-link {
   display: block;
-  width: 90%;
-  height: 20px;
+  width: 100%;
   padding: 10px;
   margin: 10px 0 0;
   background-color: #32352d;
@@ -50,8 +51,39 @@
   text-align: center;
   text-decoration: none;
   transition: background-color 0.2s ease-in-out;
+  box-sizing: border-box;
 }
 
 .form-register-link:hover {
   background-color: #000000;
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 480px) {
+  .form-container {
+    margin: 20px auto;
+    padding: 15px;
+    width: 95%;
+  }
+
+  .form-input,
+  .form-button,
+  .form-register-link {
+    font-size: 14px;
+  }
+}
+
+/* Tablet and medium screens */
+@media (min-width: 481px) and (max-width: 768px) {
+  .form-container {
+    width: 85%;
+    padding: 18px;
+  }
+}
+
+/* Large screens */
+@media (min-width: 769px) {
+  .form-container {
+    width: 100%;
+  }
 }
